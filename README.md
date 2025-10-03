@@ -11,6 +11,5 @@ Currently supported services:
 - port 80 - http
 - port 443 - https
 - Port 445 - smb
----
 Usage: 
 `easyscan.sh targets.txt`
