@@ -123,7 +123,7 @@ Broadly, the script:
 2. For each target, performs a port scan (via nmap)
 3. For each open port matching known services, sends probing requests (e.g. `nmap -sV`, `smbclient`, etc.)
 4. Parses responses
-5. Prints a summary per target both to CLI and to the file `log.txt`.
+5. Prints a summary per target both to CLI and to the file `log.txt`
 
 ---
 
