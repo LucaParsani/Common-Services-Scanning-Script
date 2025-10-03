@@ -34,7 +34,7 @@ RX='([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])'
 while IFS= read -r IP; do
 	if [[ $IP =~ ^$RX\.$RX\.$RX\.$RX$ || $IP =~ [a-z]+\.[a-z]+ ]]; then
 		echo -e "[${GREEN}+${NOCOLOR}] Scanning ${GREEN}${IP}${NOCOLOR}..."
-		nmap $IP -sS -T3 -v --defeat-rst-ratelimit > "${RESULT}" 2>&1 #add -p-
+		nmap $IP -sS -T3 -v -p- --defeat-rst-ratelimit > "${RESULT}" 2>&1
 		> "${PORTS}"
 		if cat "${RESULT}" | grep "open port" > /dev/null; then
 			cat "${RESULT}" | grep "open port" | grep -oP "[0-9]+(?=/)" >> "${PORTS}"
