@@ -22,11 +22,7 @@ if [[ ! -e $1 || ! -r $1 ]]; then
 	exit
 fi
 
-echo ""
-echo ""
-echo 'STARTING THE SCAN...'
-echo ""
-echo ""
+printf "\nSTARTING THE SCAN...\n\n\n"
 
 mkdir "easyscan files" > /dev/null 2>&1
 
@@ -67,19 +63,13 @@ while IFS= read -r IP; do
 						:;;
 				esac
 			done < "${PORTS}"
-			echo ""
-			echo ""
+			printf "\n\n"
 		else
-			echo -e "[${RED}-${NOCOLOR}] ${RED}${IP}${NOCOLOR} has no open ports."
-			echo ""
-			echo ""
+			printf "[${RED}-${NOCOLOR}] ${RED}%s${NOCOLOR} has no open ports.\n\n\n" "$IP"
 		fi
 	else
-		echo -e "[${RED}-${NOCOLOR}] ${RED}${IP}${NOCOLOR} is not a valid IP address/URL."
-		echo ""
-		echo ""
+		printf "[${RED}-${NOCOLOR}] ${RED}${IP}${NOCOLOR} is not a valid IP address/URL.\n\n\n"
 	fi
 done < $1
 
-echo -e "${NOCOLOR}SCAN COMPLETED!"
-echo ""
+printf "${NOCOLOR}SCAN COMPLETED!\n"
