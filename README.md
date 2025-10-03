@@ -15,8 +15,7 @@
 6. [Examples](#examples)
 7. [How It Works / Internals](#how-it-works--internals)
 8. [Supported Services / Ports](#supported-services--ports)
-9. [Output / Report Format](#output--report-format)
-10. [Limitations / Caveats](#limitations--caveats)
+9. [Limitations / Caveats](#limitations--caveats)
 
 ---
 
