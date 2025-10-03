@@ -1,4 +1,4 @@
-# Scanning Common Services Script
+# easyscan
 
 > **Disclaimer:**
 > This script is intended **solely for legal and ethical use**. Unauthorized scanning, probing, or exploitation of systems you do not own or have explicit permission to test is strictly prohibited. Use at your own risk.
@@ -21,7 +21,7 @@
 
 ## Overview
 
-The **Scanning Common Services Script** is a shell script designed to:
+The **easyscan.sh Script** is a shell script designed to:
 
 * Scan one or more target IP addresses or hostnames for open ports
 * Identify and probe commonly used services (e.g. FTP, SSH, HTTP, SMB)
@@ -54,8 +54,8 @@ It’s a lightweight, minimal-dependency tool for quick reconnaissance or sanity
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/LucaParsani/Scanning-Common-Services-Script.git
-cd Scanning-Common-Services-Script
+git clone https://github.com/LucaParsani/easyscan.git
+cd easyscan
 ```
 
 2. Ensure the script is executable:
