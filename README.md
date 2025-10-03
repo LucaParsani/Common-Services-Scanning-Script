@@ -1,6 +1,6 @@
 # Scanning Common Services Script
 
-> **Disclaimer**
+> **Disclaimer:**
 > This script is intended **solely for legal and ethical use**. Unauthorized scanning, probing, or exploitation of systems you do not own or have explicit permission to test is strictly prohibited. Use at your own risk.
 
 ---
@@ -82,8 +82,6 @@ mv easyscan.sh /usr/local/bin/easyscan
 * `targets.txt` is a text file where each line is an IP address or hostname.
 * The script will iterate through each target, perform scans and service probes, then emit a summary for each.
 
-You can also run it against a single host by passing one host in `targets.txt`.
-
 ---
 
 ## Examples
@@ -140,19 +138,6 @@ Currently, the script supports probing these ports / services:
 * 80 — HTTP
 * 443 — HTTPS
 * 445 — SMB
-
----
-
-## Output / Report Format
-
-The script prints both to stdout and to file. The format is roughly:
-
-```
-Target: <target>
-Open ports:
-  <port> (<service>) — <probe result / banner / metadata>
-  ...
-```
 
 ---
 
