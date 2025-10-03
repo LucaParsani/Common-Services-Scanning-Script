@@ -35,7 +35,7 @@ It’s a lightweight, minimal-dependency tool for quick reconnaissance or sanity
 
 * Port scanning
 * Service identification for key ports
-* Simple, human-readable output to CLI and to file
+* Simple, human-readable output both to CLI and to file
 * Batch mode
 
 ---
