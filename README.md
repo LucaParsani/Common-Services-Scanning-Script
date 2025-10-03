@@ -47,7 +47,7 @@ It’s a lightweight, minimal-dependency tool for quick reconnaissance or sanity
 
 - Unix-like environment (Linux, macOS, BSD)  
 - Shell (bash, sh)  
-- Common networking tools available (e.g. `nc`, `nmap`, `curl`)  
+- Common networking tools available (e.g. `nmap`, `netexec`, `ssh-audit`, `sslscan`)  
 - Internet / network reachability to the target  
 
 ---
