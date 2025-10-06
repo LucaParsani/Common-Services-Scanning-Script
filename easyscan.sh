@@ -9,6 +9,9 @@ LOG=easyscan\ files/log.txt
 RESULT=easyscan\ files/result.txt
 PORTS=easyscan\ files/ports.txt
 
+mkdir "easyscan files" > /dev/null 2>&1
+touch easyscan\ files/log.txt
+
 exec &> >(tee >(sed $'s/\033[[][^A-Za-z]*m//g' > "${LOG}"))
 
 if [ $# -eq 0 ]; then
@@ -22,8 +25,6 @@ if [[ ! -e $1 || ! -r $1 ]]; then
 fi
 
 printf "\nSTARTING THE SCAN...\n\n\n"
-
-mkdir "easyscan files" > /dev/null 2>&1
 
 RX='([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])'
 while IFS= read -r IP; do
